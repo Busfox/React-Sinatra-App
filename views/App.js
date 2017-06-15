@@ -40,7 +40,7 @@ class App extends Component {
 
     return (
       <Page
-        title="Polaris"
+        title="Goodie Basket"
         breadcrumbs={breadcrumbs}
         primaryAction={primaryAction}
         secondaryActions={secondaryActions}

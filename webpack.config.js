@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    join(__dirname, 'src/index.js'),
+    join(__dirname, 'views/index.js'),
   ],
   output: {
     path: join(__dirname, 'build'),
@@ -12,7 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
+      template: './views/index.html',
     }),
   ],
   module: {
@@ -20,7 +20,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        include: join(__dirname, 'src'),
+        include: join(__dirname, 'views'),
         use: [{
           loader: 'babel-loader',
           options: {
